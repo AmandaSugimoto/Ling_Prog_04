@@ -11,7 +11,20 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Olá! Hoje é dia 25 de Janeiro de 2022</h1>
+    <h1>
+        Olá! Hoje é dia
+        <?php
+            echo "<p>".date('d/m/Y')."</p>";
+            //print("Oi!");
+            $umaVariavel = 20;
+            $umaVariavel = "Amanda";
+            //echo "Meu nome é: ".$umaVariavel;
+            echo "Meu nome é $umaVariavel";
+            $total = 30 * 10 / 2 - 4 + 1;
+            echo $total;
+            
+        ?>  
+    </h1>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
