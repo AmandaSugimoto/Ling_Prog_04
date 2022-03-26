@@ -8,36 +8,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Index Exercício 2</title>
+    <title>Resultado</title>
   </head>
-  <body class="container">
-    <h1>Exercício 2</h1>
+  <body>
+    <h1>Cálculos</h1>
 
-    <form method="post" action="resultado.php">
-        <div class="row">
-            <div class="col">
-              <label for="valor1" class="label-control">
-                Informe o valor do quilo do produto:
-              </label>
-              <input type="number" name="valor1" 
-                  id="valor1" class="form-control"/>
-            </div>
-            <div class="col">
-            <label for="valor2" class="label-control">
-                Informe quantos quilos foram consumidos:
-              </label>
-              <input type="number" name="valor2" 
-                  id="valor2" class="form-control"/>
-            </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col">
-              <button type="submit" class="btn btn-danger">
-                Enviar
-              </button>
-          </div>
-        </div>
-    </form>
+    <?php
+        $valor1 = $_POST['valor1'];
+        $valor2 = $_POST['valor2'];
+        echo "O valor  do quilo:  $valor1 e o quilos consumidos:  $valor2";
+        echo "</br>";
+        echo "Valor a pagar: ".($valor2 * $valor1);
+
+    ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
