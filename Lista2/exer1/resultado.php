@@ -14,14 +14,25 @@
     <h1>Cálculos</h1>
 
     <?php
-        $valor1 = $_POST['valor1'];
-        $i = 0
-        $arr[$i] = array( )
-        echo "O valor  do produto:  $valor1 e o valor recebido:  $valor2";
-        echo "</br>";
-        echo "Troco: ".($valor2 - $valor1);
 
-    ?>
+        for ($i = 1; $i <= 10; $i++){
+            $vetor[$i] = $_POST["valor$i"];
+        }
+
+        $posicao = 0;
+        $maior = 0;
+        //var_dump($vetor);
+        foreach($vetor as $chave => $valor){
+            echo "Posição do Vetor: $chave e seu valor é $valor";
+            echo "<br>";
+            if ($valor > $maior){
+                $maior = $valor;
+                $posicao = $chave;
+            }
+        }
+
+        echo "O maior valor é $maior e está na posição $posicao";
+?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
