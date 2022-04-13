@@ -15,24 +15,21 @@
 
     <?php
 
-        for ($i = 1; $i <= 20; $i++){
+        for ($i = 1; $i <= 10; $i++){
             $vetor[$i] = $_POST["valor$i"];
-            $vetor = array($_POST["valor$i"]);
-            sort($vetor);
         }
-        $valorx = $_POST['valorx'];
         $n = 1;               
         //var_dump($vetor);
         foreach($vetor as $chave => $valor){
             if ($valor = $valorx){              
-                $posicao[$n] = $chave;
+                $mapa[$n] = $valor;
                 $n++;
             } 
             if($n == 1)
                 echo "Nenhuma posição encontrada.";
-            else
+            else {
                 echo "As posições encontradas foram:".$arr = array($posicao);
-
+            }
         }
 
 ?>
