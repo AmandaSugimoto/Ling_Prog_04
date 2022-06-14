@@ -1,9 +1,9 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Controller;
+namespace Aluno\Aula0405\Controller;
 
-use Aluno\ProjetoPhp\Model\DAO\ClientesDAO;
-use Aluno\ProjetoPhp\Model\Entity\Clientes;
+use Aluno\Aula0405\Model\DAO\ClientesDAO;
+use Aluno\Aula0405\Model\Entity\Clientes;
 
 class ClientesController
 {

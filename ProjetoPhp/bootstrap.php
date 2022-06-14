@@ -16,21 +16,33 @@ $router->get('/ola-mundo', function(){
     return "Olá Mundo!";
 });
 
-$router->get('/exemplo', 'Aluno\Aula0405\Controller\ExercicioController::exibir');
+    $router->get('/exemplo', 'Aluno\Aula0405\Controller\ExercicioController::exibir');
 
-$router->post('/exemplo-resultado', 'Aluno\Aula0405\Controller\ExercicioController::exibirResultado');
+    $router->post('/exemplo-resultado', 'Aluno\Aula0405\Controller\ExercicioController::exibirResultado');
 
-$router->get('/cliente/novo', 'Aluno\Aula0405\Controller\ClientesController::abrirFormularioInserir');
+    $router->get('/cliente/novo', 'Aluno\Aula0405\Controller\ClientesController::abrirFormularioInserir');
 
-$router->post('/cliente/inserir', 'Aluno\Aula0405\Controller\ClientesController::inserirCliente');
+    $router->post('/cliente/inserir', 'Aluno\Aula0405\Controller\ClientesController::inserirCliente');
 
-$router->get('/clientes', 'Aluno\Aula0405\Controller\ClientesController::abrirListaClientes');
+    $router->get('/clientes', 'Aluno\Aula0405\Controller\ClientesController::abrirListaClientes');
 
-$router->get('/cliente/alterar/{id}', 'Aluno\Aula0405\Controller\ClientesController::abrirFormularioAlterar');
+    $router->get('/cliente/alterar/{id}', 'Aluno\Aula0405\Controller\ClientesController::abrirFormularioAlterar');
 
-$router->post('/cliente/editar/{id}', 'Aluno\Aula0405\Controller\ClientesController::editarCliente');
+    $router->post('/cliente/editar/{id}', 'Aluno\Aula0405\Controller\ClientesController::editarCliente');
 
-$router->get('/cliente/excluir/{id}', 'Aluno\Aula0405\Controller\ClientesController::excluirCliente');
+    $router->get('/cliente/excluir/{id}', 'Aluno\Aula0405\Controller\ClientesController::excluirCliente');
+
+    $router->get('/produto/novo', 'Aluno\Aula0405\Controller\ProdutosController::abrirFormularioInserir');
+
+    $router->post('/produto/inserir', 'Aluno\Aula0405\Controller\ProdutosController::inserirProduto');
+    
+    $router->get('/produto', 'Aluno\Aula0405\Controller\ProdutosController::abrirListaProdutos');
+
+    $router->get('/produto/alterar/{id}', 'Aluno\Aula0405\Controller\ProdutosController::abrirFormularioAlterar');
+
+    $router->post('/produto/editar/{id}', 'Aluno\Aula0405\Controller\ProdutosController::editarProduto');
+
+    $router->get('/produto/excluir/{id}', 'Aluno\Aula0405\Controller\ProdutosController::excluirProduto');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

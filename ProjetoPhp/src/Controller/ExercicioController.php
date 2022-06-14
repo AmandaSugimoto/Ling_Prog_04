@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Aluno\ProjetoPhp\Controller;
+namespace Aluno\Aula0405\Controller;
 
 
 class ExercicioController

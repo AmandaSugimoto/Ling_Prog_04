@@ -1,8 +1,8 @@
 <?php
 
-namespace Aluno\ProjetoPhp\Model\Entity\Produtos;
+namespace Aluno\Aula0405\Model\Entity\Produtos;
 
-use Aluno\ProjetoPhp\Controller\Produtos;
+use Aluno\Aula0405\Controller\ProdutosController;
 
 class ProdutosDAO{
     public function inserir(Produtos $p){
