@@ -5,7 +5,8 @@ namespace Aluno\ProjetoPhp\Controller;
 use Aluno\ProjetoPhp\Model\DAO\ClientesDAO;
 use Aluno\ProjetoPhp\Model\Entity\Clientes;
 
-class ClientesController{
+class ClientesController
+{
 
     //private ClientesDAO $dao;
 

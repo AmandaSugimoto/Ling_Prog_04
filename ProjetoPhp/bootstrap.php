@@ -16,29 +16,21 @@ $router->get('/ola-mundo', function(){
     return "Olá Mundo!";
 });
 
-$router->get('/exemplo', 
-        'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+$router->get('/exemplo', 'Aluno\Aula0405\Controller\ExercicioController::exibir');
 
-$router->post('/exemplo-resultado',
-        'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
+$router->post('/exemplo-resultado', 'Aluno\Aula0405\Controller\ExercicioController::exibirResultado');
 
-$router->get('/cliente/novo',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioInserir');
+$router->get('/cliente/novo', 'Aluno\Aula0405\Controller\ClientesController::abrirFormularioInserir');
 
-$router->post('/cliente/inserir',
-'Aluno\ProjetoPhp\Controller\ClientesController::inserirCliente');
+$router->post('/cliente/inserir', 'Aluno\Aula0405\Controller\ClientesController::inserirCliente');
 
-$router->get('/clientes',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirListaClientes');
+$router->get('/clientes', 'Aluno\Aula0405\Controller\ClientesController::abrirListaClientes');
 
-$router->get('/cliente/alterar/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::abrirFormularioAlterar');
+$router->get('/cliente/alterar/{id}', 'Aluno\Aula0405\Controller\ClientesController::abrirFormularioAlterar');
 
-$router->post('/cliente/editar/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::editarCliente');
+$router->post('/cliente/editar/{id}', 'Aluno\Aula0405\Controller\ClientesController::editarCliente');
 
-$router->get('/cliente/excluir/{id}',
-'Aluno\ProjetoPhp\Controller\ClientesController::excluirCliente');
+$router->get('/cliente/excluir/{id}', 'Aluno\Aula0405\Controller\ClientesController::excluirCliente');
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 

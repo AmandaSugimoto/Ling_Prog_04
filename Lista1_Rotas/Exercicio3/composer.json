@@ -1,0 +1,15 @@
+{
+    "name": "aluno/aula0405",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Aula0405\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AmandaSugimoto",
+            "email": "99562749+AmandaSugimoto@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
